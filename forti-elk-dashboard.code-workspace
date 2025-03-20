@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "backend"
+		},
+		{
+			"path": "console"
+		},
+		{
+			"path": "deploy"
+		}
+	],
+	"settings": {
+		"cSpell.words": [
+			"aggs",
+			"forti"
+		]
+	}
+}

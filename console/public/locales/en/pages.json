@@ -1,0 +1,32 @@
+{
+    "login": {
+        "username": "Username",
+        "password": "Password",
+        "rememberMe": "Remember me",
+        "login": "Login",
+        "setLang": "Language"
+    },
+    "dashboard": {
+        "gt60": "More than 60 days",
+        "lt60": "Less than 60 days",
+        "lt30": "Less than 30 days",
+        "lt15": "Less than 15 days",
+        "summary": "Summary",
+        "total": "Total",
+        "valid": "Valid",
+        "expired": "Expired",
+        "monitor_success": "Normal",
+        "monitor_failed": "Abnormal",
+        "monitor_unknown": "Unknown",
+        "cert_expired_count": "Certificate validity period statistics",
+        "cert_monitor_count": "Domain name monitoring statistics",
+        "cert_category_count": "Certificate type statistics",
+        "cert_expired_trend": "Expiration trend (by certificate type / month)",
+        "cert_sign_type": "Certificate signing type statistics",
+        "cert_sign_trend": "Certificate signing trend (by certificate type / month)",
+        "status_count": "Certificate status statistics",
+        "in_use": "In use",
+        "expired_in_30": "Expired in 30 days",
+        "all_summary": "Overall summary"
+    }
+}

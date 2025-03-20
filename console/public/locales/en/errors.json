@@ -1,0 +1,18 @@
+{
+    "message": {
+        "Not found": "Not found",
+        "Successfully login": "Successfully login",
+        "The token has been refresh": "The token has been refresh",
+        "Sys User already existed": "Sys User already existed",
+        "Add user failed": "Add user failed",
+        "Bad username or password": "Bad username or password",
+        "Username is invalid": "Username is invalid"
+    },
+    "rule": {
+        "inputRequired": "Please input your {{field}}",
+        "selectRequired": "Please select your {{field}}",
+        "inputConfirmed": "Please confirm your {{field}}",
+        "pwdNotMatched": "The two passwords that you entered do not match",
+        "invalid": "Invalid {{field}} format"
+    }
+}

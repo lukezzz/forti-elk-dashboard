@@ -1,0 +1,70 @@
+{
+    "menu": {
+        "home": "Home"
+    },
+    "button": {
+        "submit": "Submit",
+        "cancel": "Cancel",
+        "create": "Create",
+        "reset": "Reset",
+        "next": "Next",
+        "prev": "Prev",
+        "back": "Back",
+        "delete": "Delete",
+        "edit": "Edit",
+        "save": "Save",
+        "yes": "Yes",
+        "no": "No"
+    },
+    "form": {
+        "username": "Username",
+        "password": "Password",
+        "password2": "Confirm Password",
+        "role": "Role",
+        "readonly": "Read Only",
+        "readwrite": "Read Write",
+        "super": "Super",
+        "displayName": "Display Name",
+        "email": "Email",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "phone": "Phone",
+        "desc": "Description",
+        "active": "Active",
+        "revision": "Revision",
+        "author": "Author",
+        "revisor": "Revisor",
+        "updated": "Updated At",
+        "created": "Created At",
+        "status": "Status",
+        "ownerName": "Owner Name",
+        "deviceModel": "Device Model",
+        "duration": "Duration"
+    },
+    "table": {
+        "operation": "Operation"
+    },
+    "header": {
+        "userProfile": "User Profile"
+    },
+    "popconfirm": {
+        "delete": "Are you sure to delete this {{field}}"
+    },
+    "pagination": {
+        "perPage": "/ page"
+    },
+    "help": "Help",
+    "user": {
+        "role": "Role",
+        "setting": "User Settings",
+        "signOut": "Sign Out",
+        "lastLogon": "Last logon at",
+        "language": "Language",
+        "languageSetting": "Language",
+        "themeSetting": "Theme",
+        "theme": {
+            "dark": "Dark",
+            "light": "Light"
+        }
+    }
+}

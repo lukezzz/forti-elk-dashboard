@@ -1,0 +1,50 @@
+networks:
+  forti-elk-dashboard:
+    external: true
+
+services:
+  
+  app-redis:
+    image: redis:dev
+    hostname: app-redis
+    networks:
+      - forti-elk-dashboard
+    volumes:
+      - app-redis:/data
+    healthcheck:
+      test: [ "CMD", "redis-cli", "ping" ]
+      interval: 10s
+      timeout: 30s
+      retries: 50
+      start_period: 30s
+    ports:
+      - "46379:6379"
+
+  app-service:
+    image: siem-backend:dev
+    hostname: app-service
+    ports:
+      - "46404:80"
+    configs:
+      - app-env
+    volumes:
+      - app-src:/usr/src/app
+    # command: uvicorn main:app --workers 1 --host=0.0.0.0 --port=80 --reload
+    command: [ "fastapi", "dev", "--host=0.0.0.0", "--port=80" ]
+    # command: ["fastapi", "run", "--host=0.0.0.0", "--port=80"]
+    networks:
+      - forti-elk-dashboard
+
+  app-nginx:
+    image: nginx:dev
+    restart: unless-stopped
+    volumes:
+      - app-nginx-config:/etc/nginx/conf.d/
+      - app-nginx-logs:/var/log/nginx
+      - frontend-dist:/usr/share/nginx/web-client
+    ports:
+      - "46405:80"
+    networks:
+      - forti-elk-dashboard
+
+

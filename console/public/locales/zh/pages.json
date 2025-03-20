@@ -1,0 +1,34 @@
+{
+    "login": {
+        "username": "登录名",
+        "password": "密码",
+        "rememberMe": "记住我",
+        "login": "登录",
+        "setLang": "语言"
+    },
+    "dashboard": {
+        "gt60": "超过60天",
+        "lt60": "少于60天",
+        "lt30": "少于30天",
+        "lt15": "少于15天",
+        "expire": "已过期",
+        "summary": "汇总信息",
+        "total": "总数",
+        "valid": "有效证书",
+        "invalid": "无效证书",
+        "expired": "已过期",
+        "monitor_success": "监控正常",
+        "monitor_failed": "监控异常",
+        "monitor_unknown": "无法检测",
+        "cert_expired_count": "证书有效期统计",
+        "cert_monitor_count": "证书监控统计",
+        "cert_category_count": "证书类别统计",
+        "cert_expired_trend": "过期趋势(按证书类别/月)",
+        "cert_sign_type": "签发类型统计",
+        "cert_sign_trend": "证书过期趋势(按签发类型/月)",
+        "status_count": "状态统计",
+        "in_use": "使用中",
+        "expired_in_30": "30天内过期",
+        "all_summary": "所有证书统计"
+    }
+}
