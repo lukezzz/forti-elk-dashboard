@@ -176,3 +176,4 @@ nginx/stg/config.d/certs
 nginx/prod/config.d/certs
 frontend/.env.production
 airflow/dags/test_dags
+images/

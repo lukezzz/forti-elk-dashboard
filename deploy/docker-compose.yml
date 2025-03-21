@@ -10,7 +10,7 @@ services:
     networks:
       - forti-elk-dashboard
     volumes:
-      - app-redis:/data
+      - ./app-redis:/data
     healthcheck:
       test: [ "CMD", "redis-cli", "ping" ]
       interval: 10s
@@ -25,10 +25,10 @@ services:
     hostname: app-service
     ports:
       - "46404:80"
-    configs:
-      - app-env
+    env_file:
+      - .env
     volumes:
-      - app-src:/usr/src/app
+      - ../backend/src:/usr/src/app
     # command: uvicorn main:app --workers 1 --host=0.0.0.0 --port=80 --reload
     command: [ "fastapi", "dev", "--host=0.0.0.0", "--port=80" ]
     # command: ["fastapi", "run", "--host=0.0.0.0", "--port=80"]
@@ -39,9 +39,9 @@ services:
     image: nginx:dev
     restart: unless-stopped
     volumes:
-      - app-nginx-config:/etc/nginx/conf.d/
-      - app-nginx-logs:/var/log/nginx
-      - frontend-dist:/usr/share/nginx/web-client
+      - ./app-nginx-config:/etc/nginx/conf.d/
+      - ./app-nginx-logs:/var/log/nginx
+      - ../console/dist:/usr/share/nginx/web-client
     ports:
       - "46405:80"
     networks:
