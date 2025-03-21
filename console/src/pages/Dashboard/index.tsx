@@ -13,7 +13,7 @@ export const CyberMapContent = () => {
     const [userSymbolScale, setUserSymbolScale] = useState(1);
 
     return (
-        <Row align="middle">
+        <Row align="middle" style={{ marginTop: '2%' }}>
             <Col span={5}>
                 <Flex vertical gap="small">
                     <FortiTrafficRequestsOverTime />

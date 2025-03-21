@@ -4,7 +4,7 @@ import DashboardProvider, { DashboardContext } from './providers/Dashboard.provi
 import { ThemeProvider } from 'antd-style';
 import { useContext } from 'react';
 import { DashboardThemeComponentsToken, DashboardThemeDarkToken, DashboardThemeDefaultToken } from '@/data/SiteData';
-import { ConfigProvider, App as AntdApp, Layout, Typography, Flex } from 'antd';
+import { ConfigProvider, App as AntdApp, Layout, Typography, Flex, theme } from 'antd';
 import jiushiLogo from '@/assets/jiushi.png';
 import f1Logo from '@/assets/f1.png';
 import { AutoRefresh, SearchDateTimeRangePicker } from './pages/Dashboard/filters';
@@ -45,7 +45,7 @@ function App() {
         }
         :
         {
-          token: DashboardThemeDefaultToken,
+          token: DashboardThemeDarkToken,
           components: DashboardThemeComponentsToken,
         }
       }
@@ -54,12 +54,7 @@ function App() {
         <ConfigProvider
           locale={currentLocale}
           theme={{
-            components: {
-              Layout: {
-                footerBg: "black",
-                headerBg: 'black'
-              },
-            },
+            algorithm: theme.darkAlgorithm,
           }}
         >
           <DashboardProvider>

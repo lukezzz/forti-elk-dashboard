@@ -20,7 +20,7 @@ import { baseApi } from '@/services/base';
 const persistConfig = {
     key: 'root',
     storage,
-    version: 0.14,
+    version: 0.1,
     blacklist: ['baseApi'],
     migrate: createMigrate(migrations, { debug: true })
 };
