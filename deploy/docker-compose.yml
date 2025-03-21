@@ -21,7 +21,7 @@ services:
       - "46379:6379"
 
   app-service:
-    image: siem-backend:dev
+    image: forti-elk-dashboard-service:dev
     hostname: app-service
     ports:
       - "46404:80"
